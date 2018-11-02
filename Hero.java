@@ -5,7 +5,6 @@ public class Hero{
 	public Hero(String nama){
 		this.nama = nama;
 	}
-
 	public void showNama(){
 		System.out.println("My Name is "+nama);
 	}
