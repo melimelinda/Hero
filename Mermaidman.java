@@ -1,11 +1,12 @@
 public class Mermaidman extends Hero{
 	public int stockBolaAir=100;
-	public Mermaidman(){
-		super();//construktor Hero
+	public Mermaidman(String nama){
+		super(nama);//construktor Hero
 		System.out.println("Stok bola air = "+showStockBA());
 	}
 	//overloading construktor
-	public Mermaidman(int stockBolaAir){
+	public Mermaidman(String nama, int stockBolaAir){
+		super(nama);
 		this.stockBolaAir = stockBolaAir;
 		System.out.println("Stok bola air = "+showStockBA());
 	}
@@ -21,4 +22,5 @@ public class Mermaidman extends Hero{
 	public int showStockBA(){
 		return stockBolaAir;
 	}
+
 }

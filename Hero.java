@@ -1,10 +1,13 @@
 public class Hero{
-	public int power = 100;
 
-	public Hero(){
-		showPower();
+	public String nama;
+
+	public Hero(String nama){
+		this.nama = nama;
 	}
-	public void showPower(){
-		System.out.println("My power is "+power);
+
+	public void showNama(){
+		System.out.println("My Name is "+nama);
 	}
+
 }
